@@ -1,0 +1,6 @@
+Python fetches 1000 candles of AAPL from Alpaca.
+Python sends that list of numbers to Rust.
+Rust calculates the SMA and RSI across all 1000 candles in under 1 millisecond.
+C++ runs a specific risk check (e.g., "Am I exceeding my daily loss limit?")
+to ensure the trade is safe.
+Python receives the "Go" signal and places the order via Alpaca.
